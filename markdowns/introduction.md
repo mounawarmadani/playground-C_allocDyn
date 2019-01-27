@@ -32,6 +32,7 @@ Prototype : `void free (void* ptr);`
 
 void main() {
 	int *p=NULL;
+	int i;
 	
 	printf("%p\n",p);
 	
@@ -39,6 +40,9 @@ void main() {
 	
 	printf("%p\n",p);
 
+	for (i=0;i<5;i++)
+		*(p+i)=i*i;
+	
 	free(p);
 	p=NULL;
 }
