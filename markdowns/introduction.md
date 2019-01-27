@@ -50,4 +50,4 @@ void main() {
 
 L'exemple ci-dessus alloue un espace mémoire pouvant accueillir 5 entiers. L'espace alloué est ensuite rempli de valeur. L'espace est ensuite libéré.
 
-[Ce lien] donne accès à une exécution pas à pas du code avec une vue sur la mémoire.
+[Ce lien](https://goo.gl/Rrc19t) donne accès à une exécution pas à pas du code avec une vue sur la mémoire.
