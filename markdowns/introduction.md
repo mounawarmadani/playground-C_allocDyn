@@ -27,23 +27,19 @@ Prototype : `void free (void* ptr);`
 ## Exemple
 
 ```C runnable
-
-#include <stdin.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 void main() {
 	int *p=NULL;
 	
+	printf("%p\n",p);
+	
 	p = (int *)malloc(5*sizeof(int));
 	
 	printf("%p\n",p);
-	printf("%d\n",sizeof(*p));
-	
+
 	free(p);
-	
-	printf("%p\n",p);
-	printf("%d\n",sizeof(*p));
-	
 	p=NULL;
 }
 ```
