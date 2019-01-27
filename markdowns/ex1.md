@@ -1,6 +1,5 @@
 # Exercice 1 - Base
 
-Il faut écrire un programme remplissant aléatoirement un vecteur de taille `n` et chercher l'élément de valeur maximale dans ce vecteur. `n` est choisi à l'exécution par l'utilisateur.
+Ecrire la fonction qui alloue la mémoire d'un vecteur d'entier de taille `dimension`, puis qui l'initialise à la valeur `val`, `int * alloue_vecteur(int dimension, int val)`.
 
-Aucun vecteur n'est déclaré dans le programme, il faut utiliser l'allocation dynamique.
 
