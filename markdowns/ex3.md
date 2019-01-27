@@ -1,4 +1,4 @@
-# Exercice 3 - Base
+# Exercice 4
 
 Ecrire la fonction qui génère et conserve en mémoire les `n` premier nombre de Fibonacci, la fonction reverra un pointeur sur la zone mémoire contenant l'information `int * gen_fibo(int n)`.
 

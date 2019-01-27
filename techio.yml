@@ -3,11 +3,20 @@ plan:
 - title: Introduction
   statement: markdowns/introduction.md
 - title: Exercice 1
-  statement: markdowns/ex1.md
+  statement: markdowns/ex0.md
 - title: Exercice 2
-  statement: markdowns/ex2.md
+  statement: markdowns/ex1.md
 - title: Exercice 3
+  statement: markdowns/ex2.md
+- title: Exercice 4
   statement: markdowns/ex3.md
+- title: Exercice 5
+  statement: markdowns/ex4.md
+- title: Exercice 6
+  statement: markdowns/ex5.md
+- title: Exercice 7
+  statement: markdowns/ex6.md
+
 projects:
   tassement:
     root: /tassement
