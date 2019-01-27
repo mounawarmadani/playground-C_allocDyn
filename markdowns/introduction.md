@@ -15,7 +15,7 @@ Prototype : `void* malloc (size_t size);`
 Le bloc nouvellement alloué n'est pas initialisé. Les valeurs qu'il contien ne sont donc pas prédictible.
 
 Si l'allocation se passe bien `malloc` renvoie le pointeur sur le début du bloc sinon elle renvoie `NULL`.
- 
+
 ## `free`
 
 Prototype : `void free (void* ptr);`
@@ -23,3 +23,27 @@ Prototype : `void free (void* ptr);`
 `free` libère un bloc mémoire précédemment alloué par un `malloc` et se trouvant à l'adresse `ptr`. L'espace mémoire redevient disponnible pour un autre usage.
 
 **Attention :** `free` ne motifie pas la valeur de `ptr`. 
+
+## Exemple
+
+```c runnable
+
+#include <stdin.h>
+#include <stdlib.h>
+
+void main() {
+	int *p=NULL;
+	
+	p = (int *)malloc(5*sizeof(int));
+	
+	printf("%p\n",p);
+	printf("%d\n",sizeof(*p));
+	
+	free(p);
+	
+	printf("%p\n",p);
+	printf("%d\n",sizeof(*p));
+	
+	p=NULL;
+}
+```
