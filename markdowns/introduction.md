@@ -26,7 +26,7 @@ Prototype : `void free (void* ptr);`
 
 ## Exemple
 
-```c runnable
+```C runnable
 
 #include <stdin.h>
 #include <stdlib.h>
