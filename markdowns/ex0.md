@@ -4,7 +4,7 @@ Ecrire un programme qui demande à l'utilisateur le nombre de valeur qu'il veut 
 Le programme affichera ensuite les `n` valeurs sous forme d'une somme ainsi que le résultat de la somme. 
 
 Le format d'affichage en sortie est le suivant : 
-```math
+```c
 1+2+3+4+5=15
 ```
 
