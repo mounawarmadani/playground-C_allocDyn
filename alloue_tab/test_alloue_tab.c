@@ -11,7 +11,7 @@ struct nbval {
 int main(void) {
 	int i,j,k;
     int ok=1;
-	struct nbval test[] = {{10,10,5},{1,10,6},{1000,500,3}};
+	struct nbval test[] = {{1,10,6},{10,10,5},{1000,500,3}};
 	int *p;
 
     for (i=0;i<3;i++) {	
