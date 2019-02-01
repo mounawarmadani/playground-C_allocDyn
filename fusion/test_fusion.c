@@ -21,7 +21,7 @@ int main() {
   v=fusion(v1,v2);
   
   for (i=0;i<n1+n2;i++)
-	  printf("%d ",v+i);  
+	  printf("%d ",*(v+i));  
   
   printf("\n");
   return 0;
