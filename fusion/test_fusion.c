@@ -18,7 +18,7 @@ int main() {
   for (i=0;i<n2;i++)
 	  scanf("%d",v2+i);  
 
-  v=fusion(v1,v2);
+  v=fusion(v1,n1,v2,n2);
   
   for (i=0;i<n1+n2;i++)
 	  printf("%d ",*(v+i));  
