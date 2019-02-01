@@ -5,7 +5,7 @@
 struct nbval {
 	int nb;
 	int val;
-}
+};
 
 int main(void) {
 	int i,j;
