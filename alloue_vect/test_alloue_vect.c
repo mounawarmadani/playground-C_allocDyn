@@ -10,7 +10,7 @@ struct nbval {
 int main(void) {
 	int i,j;
     int ok=1;
-	struct nbval test = {{10,5}}
+	struct nbval test = {{10,5}};
 	int *p;
 
     for (i=0;i<4;i++) {	
