@@ -33,3 +33,8 @@ projects:
     runner:
       name: techio/cmake-gcc-runner
       version: latest 
+   fibo:
+    root: /fibo
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest 
