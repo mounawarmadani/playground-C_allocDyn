@@ -10,7 +10,7 @@ int main(void) {
 
 	
 	p=alloue_vect(10,5);
-	for (i=0;i<10;i++) printf("%d",*(p+i));
+	for (i=0;i<10;i++) if(*(p+i)==5) printf("ok");
 	
 	/*
 	
