@@ -28,3 +28,8 @@ projects:
     runner:
       name: techio/cmake-gcc-runner
       version: latest      
+  alloue_tab:
+    root: /alloue_tab
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest 
