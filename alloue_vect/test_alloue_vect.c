@@ -10,14 +10,18 @@ struct nbval {
 int main(void) {
 	int i,j;
     int ok=1;
-	struct nbval test[] = {{10,5}};
+	struct nbval test[] = {{10,5},{0,6},{1000,3}};
 	int *p;
 
-    for (i=0;i<1;i++) {	
+    for (i=0;i<3;i++) {	
 		p=alloue_vect(test[i].nb,test[i].val);
 		for (j=0;j<10;j++) 
 			if(*(p+j)==5) ok = ok && 1;
 			else ok = ok && 0;
+		if (ok)
+			printf("TECHIO> message --channel \"RAPPORT TEST %d\" 'Succes function test.'\n",i);
+		else
+			printf("TECHIO> message --channel \"RAPPORT TEST %d\" 'Error function fail test.'\n",i);
 		free(p);
 	}
 	/*
