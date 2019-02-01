@@ -10,10 +10,10 @@ struct nbval {
 int main(void) {
 	int i,j;
     int ok=1;
-	struct nbval test = {{10,5}};
+	struct nbval test[] = {{10,5}};
 	int *p;
 
-    for (i=0;i<4;i++) {	
+    for (i=0;i<1;i++) {	
 		p=alloue_vect(test[i].nb,test[i].val);
 		for (j=0;j<10;j++) 
 			if(*(p+j)==5) ok = ok && 1;
