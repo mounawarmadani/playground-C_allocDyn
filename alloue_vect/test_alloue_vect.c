@@ -2,16 +2,24 @@
 #include <stdlib.h>
 #include "alloue_vect.h"
 
+struct nbval {
+	int nb;
+	int val;
+}
+
 int main(void) {
-	int i;
+	int i,j;
     int ok=1;
+	struct nbval test = {{10,5}}
 	int *p;
 
-
-	
-	p=alloue_vect(10,5);
-	for (i=0;i<10;i++) if(*(p+i)==5) printf("ok");
-	
+    for (i=0;i<4;i++) {	
+		p=alloue_vect(test[i].nb,test[i].val);
+		for (j=0;j<10;j++) 
+			if(*(p+j)==5) ok = ok && 1;
+			else ok = ok && 0;
+		free(p);
+	}
 	/*
 	
     for (i=0;i<4;i++) {		
@@ -25,11 +33,11 @@ int main(void) {
             printf("TECHIO> message --channel \"RAPPORT TEST %d\" 'Error function fail test.'\n",i);
         }
     }
-        
+     */
     if(ok)
         printf("TECHIO> success true\n");
     else  
 		printf("TECHIO> success false\n");
-*/
+
 	return 0;
 }
