@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "fusion.h"
+
 int main() {
 
   int *v1,*v2, *v;
