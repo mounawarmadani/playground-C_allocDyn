@@ -14,7 +14,7 @@ int main() {
 	  scanf("%d",v1+i);
 
   scanf("%d",&n2);
-  v2=malloc(sizeof(int)*n1);
+  v2=malloc(sizeof(int)*n2);
   for (i=0;i<n2;i++)
 	  scanf("%d",v2+i);  
 
