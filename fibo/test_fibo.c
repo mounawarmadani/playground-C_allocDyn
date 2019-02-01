@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "fibo.h"
 
-int fib(int n) {
+int _fib(int n) {
 	if (n==0 || n==1) return 1;
 	else return fib(n-1)+fib(n-2);
 }
@@ -17,7 +17,7 @@ int main(void) {
 		p=gen_fibo(test[i]);
 		
 		for (j=0;j<test[i];j++) 
-			if(*(p+j)==fib(j)) ok = ok && 1;
+			if(*(p+j)==_fib(j)) ok = ok && 1;
 			else ok = ok && 0;
 			
 		if (ok)
