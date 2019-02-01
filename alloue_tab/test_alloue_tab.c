@@ -18,7 +18,7 @@ int main(void) {
 		p=alloue_tab(test[i].l,test[i].c,test[i].val);
 		for (j=0;j<test[i].l;j++) 
 			for (k=0;k<test[i].c;k++)
-				if(*(p+j*test[i].c+k)==test[i].val*j) ok = ok && 1;
+				if(*(p+j*test[i].c+k)==test[i].val*(j+1)) ok = ok && 1;
 				else ok = ok && 0;
 			
 		if (ok)
