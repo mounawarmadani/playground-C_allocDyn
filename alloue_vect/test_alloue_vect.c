@@ -15,9 +15,10 @@ int main(void) {
 
     for (i=0;i<3;i++) {	
 		p=alloue_vect(test[i].nb,test[i].val);
-		for (j=0;j<10;j++) 
-			if(*(p+j)==5) ok = ok && 1;
+		for (j=0;j<test[i].nb;j++) 
+			if(*(p+j)==test[i].val) ok = ok && 1;
 			else ok = ok && 0;
+			
 		if (ok)
 			printf("TECHIO> message --channel \"RAPPORT TEST %d\" 'Succes function test.'\n",i);
 		else
