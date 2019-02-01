@@ -23,3 +23,8 @@ projects:
     runner:
       name: techio/cmake-gcc-runner
       version: latest
+  alloue_vect:
+    root: /alloue_vect
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest      
