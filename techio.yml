@@ -18,8 +18,23 @@ plan:
   statement: markdowns/ex6.md
 
 projects:
-  tassement:
-    root: /tassement
+  liste_nbr:
+    root: /liste_nbr
     runner:
       name: techio/cmake-gcc-runner
       version: latest
+  alloue_vect:
+    root: /alloue_vect
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest      
+  alloue_tab:
+    root: /alloue_tab
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest 
+  fibo:
+    root: /fibo
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest 

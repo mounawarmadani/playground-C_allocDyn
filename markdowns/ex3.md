@@ -1,6 +1,6 @@
 # Exercice 4
 
-Ecrire la fonction qui génère et conserve en mémoire les `n` premier nombre de Fibonacci, la fonction reverra un pointeur sur la zone mémoire contenant l'information `int * gen_fibo(int n)`.
+Ecrire la fonction qui génère et conserve en mémoire les `n` premier nombre de Fibonacci, la fonction renverra un pointeur sur la zone mémoire contenant l'information `int * gen_fibo(int n)`.
 
 ## Rappel
 La suite de Fibonacci est une suite d'entiers dans laquelle chaque terme est la somme des deux termes qui le précèdent. Elle commence par les termes 0 et 1 et ses premiers termes sont : 
@@ -9,3 +9,6 @@ La suite de Fibonacci est une suite d'entiers dans laquelle chaque terme est la 
 ```
 
 On peut écrire $`fib_{n} = fib_{n-1} + fib_{n-2}`$.
+
+
+@[Génération fibo]({"stubs": ["fibo.h"],"command": "sh /project/target/run.sh fibo","project": "fibo"})
