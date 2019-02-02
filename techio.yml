@@ -38,3 +38,8 @@ projects:
     runner:
       name: techio/cmake-gcc-runner
       version: latest 
+  fusion:
+    root: /fusion
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest  
