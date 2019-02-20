@@ -16,7 +16,7 @@ int main(void) {
     for (i=0;i<3;i++) {	
 		p=gen_fibo(test[i]);
 		
-		for (j=0;j<test[i];j++) 
+		for (j=0;j<=test[i];j++) 
 			if(*(p+j)==_fib(j)) ok = ok && 1;
 			else ok = ok && 0;
 			
