@@ -13,7 +13,7 @@ int main(void) {
 	int test[] = {0,1,5,10};
 	int *p;
 
-    for (i=0;i<3;i++) {	
+    for (i=0;i<4;i++) {	
 		p=gen_fibo(test[i]);
 		
 		for (j=0;j<test[i];j++) 
