@@ -3,7 +3,10 @@
 #include "fibo.h"
 
 int _fib(int n) {
-	if (n==0 || n==1) return 1;
+	
+	if (n==0) return 0;
+	else if (n==1) return 1; 
+	else if (n==2) return 1; 
 	else return _fib(n-1)+_fib(n-2);
 }
 
@@ -13,7 +16,7 @@ int main(void) {
 	int test[] = {0,1,5,10};
 	int *p;
 
-    for (i=0;i<3;i++) {	
+    for (i=0;i<4;i++) {	
 		p=gen_fibo(test[i]);
 		
 		for (j=0;j<test[i];j++) 
